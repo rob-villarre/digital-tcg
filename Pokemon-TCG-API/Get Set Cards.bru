@@ -1,0 +1,19 @@
+meta {
+  name: Get Set Cards
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://api.pokemontcg.io/v2/cards?q=set.id:base1
+  body: none
+  auth: bearer
+}
+
+params:query {
+  q: set.id:base1
+}
+
+auth:bearer {
+  token: 003180a9-5d41-40a4-97fd-9be62adf4731
+}

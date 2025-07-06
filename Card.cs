@@ -15,7 +15,7 @@ public partial class Card : TextureButton
 
   [Export]
   private CardType Type;
-  
+
   public override void _Ready()
   {
 
