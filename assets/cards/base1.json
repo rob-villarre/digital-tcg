@@ -3,7 +3,7 @@
         "id": "base1-1",
         "name": "Alakazam",
         "number": "1",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -26,11 +26,12 @@
             "Psychic"
         ],
         "evolvesFrom": "Kadabra",
+        "rarity": "Rare Holo",
         "abilities": [
             {
                 "name": "Damage Swap",
                 "text": "As often as you like during your turn (before your attack), you may move 1 damage counter from 1 of your Pokémon to another as long as you don't Knock Out that Pokémon. This power can't be used if Alakazam is Asleep, Confused, or Paralyzed.",
-                "type": "pokemon power"
+                "type": "Pokemon Power"
             }
         ],
         "attacks": [
@@ -61,7 +62,7 @@
         "id": "base1-2",
         "name": "Blastoise",
         "number": "2",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -84,11 +85,12 @@
             "Water"
         ],
         "evolvesFrom": "Wartortle",
+        "rarity": "Rare Holo",
         "abilities": [
             {
                 "name": "Rain Dance",
                 "text": "As often as you like during your turn (before your attack), you may attach 1 Water Energy card to 1 of your Water Pokémon. (This doesn't use up your 1 Energy card attachment for the turn.) This power can't be used if Blastoise is Asleep, Confused, or Paralyzed.",
-                "type": "pokemon power"
+                "type": "Pokemon Power"
             }
         ],
         "attacks": [
@@ -119,7 +121,7 @@
         "id": "base1-3",
         "name": "Chansey",
         "number": "3",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -141,6 +143,7 @@
         "types": [
             "Colorless"
         ],
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Scrunch",
@@ -190,7 +193,7 @@
         "id": "base1-4",
         "name": "Charizard",
         "number": "4",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -213,11 +216,12 @@
             "Fire"
         ],
         "evolvesFrom": "Charmeleon",
+        "rarity": "Rare Holo",
         "abilities": [
             {
                 "name": "Energy Burn",
                 "text": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into Fire Energy for the rest of the turn. This power can't be used if Charizard is Asleep, Confused, or Paralyzed.",
-                "type": "pokemon power"
+                "type": "Pokemon Power"
             }
         ],
         "attacks": [
@@ -257,7 +261,7 @@
         "id": "base1-5",
         "name": "Clefairy",
         "number": "5",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -279,6 +283,7 @@
         "types": [
             "Colorless"
         ],
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Sing",
@@ -326,7 +331,7 @@
         "id": "base1-6",
         "name": "Gyarados",
         "number": "6",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -349,6 +354,7 @@
             "Water"
         ],
         "evolvesFrom": "Magikarp",
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Dragon Rage",
@@ -399,7 +405,7 @@
         "id": "base1-7",
         "name": "Hitmonchan",
         "number": "7",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -421,6 +427,7 @@
         "types": [
             "Fighting"
         ],
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Jab",
@@ -460,7 +467,7 @@
         "id": "base1-8",
         "name": "Machamp",
         "number": "8",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -483,11 +490,12 @@
             "Fighting"
         ],
         "evolvesFrom": "Machoke",
+        "rarity": "Rare Holo",
         "abilities": [
             {
                 "name": "Strikes Back",
                 "text": "Whenever your opponent's attack damages Machamp (even if Machamp is Knocked Out), this power does 10 damage to the attacking Pokémon. (Don't apply Weakness and Resistance.) This power can't be used if Machamp is Asleep, Confused, or Paralyzed when your opponent attacks.",
-                "type": "pokemon power"
+                "type": "Pokemon Power"
             }
         ],
         "attacks": [
@@ -519,7 +527,7 @@
         "id": "base1-9",
         "name": "Magneton",
         "number": "9",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -542,6 +550,7 @@
             "Lightning"
         ],
         "evolvesFrom": "Magnemite",
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Thunder Wave",
@@ -584,7 +593,7 @@
         "id": "base1-10",
         "name": "Mewtwo",
         "number": "10",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -606,6 +615,7 @@
         "types": [
             "Psychic"
         ],
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Psychic",
@@ -645,7 +655,7 @@
         "id": "base1-11",
         "name": "Nidoking",
         "number": "11",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -668,6 +678,7 @@
             "Grass"
         ],
         "evolvesFrom": "Nidorino",
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Thrash",
@@ -709,7 +720,7 @@
         "id": "base1-12",
         "name": "Ninetales",
         "number": "12",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -732,6 +743,7 @@
             "Fire"
         ],
         "evolvesFrom": "Vulpix",
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Lure",
@@ -773,7 +785,7 @@
         "id": "base1-13",
         "name": "Poliwrath",
         "number": "13",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -796,6 +808,7 @@
             "Water"
         ],
         "evolvesFrom": "Poliwhirl",
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Water Gun",
@@ -838,7 +851,7 @@
         "id": "base1-14",
         "name": "Raichu",
         "number": "14",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -861,6 +874,7 @@
             "Lightning"
         ],
         "evolvesFrom": "Pikachu",
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Agility",
@@ -903,7 +917,7 @@
         "id": "base1-15",
         "name": "Venusaur",
         "number": "15",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -926,11 +940,12 @@
             "Grass"
         ],
         "evolvesFrom": "Ivysaur",
+        "rarity": "Rare Holo",
         "abilities": [
             {
                 "name": "Energy Trans",
                 "text": "As often as you like during your turn (before your attack), you may take 1 Grass Energy card attached to 1 of your Pokémon and attach it to a different one. This power can't be used if Venusaur is Asleep, Confused, or Paralyzed.",
-                "type": "pokemon power"
+                "type": "Pokemon Power"
             }
         ],
         "attacks": [
@@ -962,7 +977,7 @@
         "id": "base1-16",
         "name": "Zapdos",
         "number": "16",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -984,6 +999,7 @@
         "types": [
             "Lightning"
         ],
+        "rarity": "Rare Holo",
         "attacks": [
             {
                 "name": "Thunder",
@@ -1027,7 +1043,7 @@
         "id": "base1-17",
         "name": "Beedrill",
         "number": "17",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1050,6 +1066,7 @@
             "Grass"
         ],
         "evolvesFrom": "Kakuna",
+        "rarity": "Rare",
         "attacks": [
             {
                 "name": "Twineedle",
@@ -1099,7 +1116,7 @@
         "id": "base1-18",
         "name": "Dragonair",
         "number": "18",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1122,6 +1139,7 @@
             "Colorless"
         ],
         "evolvesFrom": "Dratini",
+        "rarity": "Rare",
         "attacks": [
             {
                 "name": "Slam",
@@ -1164,7 +1182,7 @@
         "id": "base1-19",
         "name": "Dugtrio",
         "number": "19",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1187,6 +1205,7 @@
             "Fighting"
         ],
         "evolvesFrom": "Diglett",
+        "rarity": "Rare",
         "attacks": [
             {
                 "name": "Slash",
@@ -1237,7 +1256,7 @@
         "id": "base1-20",
         "name": "Electabuzz",
         "number": "20",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1259,6 +1278,7 @@
         "types": [
             "Lightning"
         ],
+        "rarity": "Rare",
         "attacks": [
             {
                 "name": "Thundershock",
@@ -1297,7 +1317,7 @@
         "id": "base1-21",
         "name": "Electrode",
         "number": "21",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1320,11 +1340,12 @@
             "Lightning"
         ],
         "evolvesFrom": "Voltorb",
+        "rarity": "Rare",
         "abilities": [
             {
                 "name": "Buzzap",
                 "text": "At any time during your turn (before your attack), you may Knock Out Electrode and attach it to 1 of your other Pokémon. If you do, choose a type of Energy. Electrode is now an Energy card (instead of a Pokémon) that provides 2 energy of that type. You can't use this power if Electrode is Asleep, Confused, or Paralyzed.",
-                "type": "pokemon power"
+                "type": "Pokemon Power"
             }
         ],
         "attacks": [
@@ -1355,7 +1376,7 @@
         "id": "base1-22",
         "name": "Pidgeotto",
         "number": "22",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1378,6 +1399,7 @@
             "Colorless"
         ],
         "evolvesFrom": "Pidgey",
+        "rarity": "Rare",
         "attacks": [
             {
                 "name": "Whirlwind",
@@ -1426,7 +1448,7 @@
         "id": "base1-23",
         "name": "Arcanine",
         "number": "23",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1449,6 +1471,7 @@
             "Fire"
         ],
         "evolvesFrom": "Growlithe",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Flamethrower",
@@ -1491,7 +1514,7 @@
         "id": "base1-24",
         "name": "Charmeleon",
         "number": "24",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1514,6 +1537,7 @@
             "Fire"
         ],
         "evolvesFrom": "Charmander",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Slash",
@@ -1555,7 +1579,7 @@
         "id": "base1-25",
         "name": "Dewgong",
         "number": "25",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1578,6 +1602,7 @@
             "Water"
         ],
         "evolvesFrom": "Seel",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Aurora Beam",
@@ -1620,7 +1645,7 @@
         "id": "base1-26",
         "name": "Dratini",
         "number": "26",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1642,6 +1667,7 @@
         "types": [
             "Colorless"
         ],
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Pound",
@@ -1668,7 +1694,7 @@
         "id": "base1-27",
         "name": "Farfetch'd",
         "number": "27",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1690,6 +1716,7 @@
         "types": [
             "Colorless"
         ],
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Leek Slap",
@@ -1737,7 +1764,7 @@
         "id": "base1-28",
         "name": "Growlithe",
         "number": "28",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1759,6 +1786,7 @@
         "types": [
             "Fire"
         ],
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Flare",
@@ -1786,7 +1814,7 @@
         "id": "base1-29",
         "name": "Haunter",
         "number": "29",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1809,6 +1837,7 @@
             "Psychic"
         ],
         "evolvesFrom": "Gastly",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Hypnosis",
@@ -1847,7 +1876,7 @@
         "id": "base1-30",
         "name": "Ivysaur",
         "number": "30",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1870,6 +1899,7 @@
             "Grass"
         ],
         "evolvesFrom": "Bulbasaur",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Vine Whip",
@@ -1911,7 +1941,7 @@
         "id": "base1-31",
         "name": "Jynx",
         "number": "31",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1933,6 +1963,7 @@
         "types": [
             "Psychic"
         ],
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Doubleslap",
@@ -1972,7 +2003,7 @@
         "id": "base1-32",
         "name": "Kadabra",
         "number": "32",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -1995,6 +2026,7 @@
             "Psychic"
         ],
         "evolvesFrom": "Abra",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Recover",
@@ -2035,7 +2067,7 @@
         "id": "base1-33",
         "name": "Kakuna",
         "number": "33",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2058,6 +2090,7 @@
             "Grass"
         ],
         "evolvesFrom": "Weedle",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Stiffen",
@@ -2097,7 +2130,7 @@
         "id": "base1-34",
         "name": "Machoke",
         "number": "34",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2120,6 +2153,7 @@
             "Fighting"
         ],
         "evolvesFrom": "Machop",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Karate Chop",
@@ -2162,7 +2196,7 @@
         "id": "base1-35",
         "name": "Magikarp",
         "number": "35",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2184,6 +2218,7 @@
         "types": [
             "Water"
         ],
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Tackle",
@@ -2221,7 +2256,7 @@
         "id": "base1-36",
         "name": "Magmar",
         "number": "36",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2243,6 +2278,7 @@
         "types": [
             "Fire"
         ],
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Fire Punch",
@@ -2283,7 +2319,7 @@
         "id": "base1-37",
         "name": "Nidorino",
         "number": "37",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2306,6 +2342,7 @@
             "Grass"
         ],
         "evolvesFrom": "Nidoran ♂",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Double Kick",
@@ -2348,7 +2385,7 @@
         "id": "base1-38",
         "name": "Poliwhirl",
         "number": "38",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2371,6 +2408,7 @@
             "Water"
         ],
         "evolvesFrom": "Poliwag",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Amnesia",
@@ -2411,7 +2449,7 @@
         "id": "base1-39",
         "name": "Porygon",
         "number": "39",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2433,6 +2471,7 @@
         "types": [
             "Colorless"
         ],
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Conversion 1",
@@ -2479,7 +2518,7 @@
         "id": "base1-40",
         "name": "Raticate",
         "number": "40",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2502,6 +2541,7 @@
             "Colorless"
         ],
         "evolvesFrom": "Rattata",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Bite",
@@ -2549,7 +2589,7 @@
         "id": "base1-41",
         "name": "Seel",
         "number": "41",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2571,6 +2611,7 @@
         "types": [
             "Water"
         ],
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Headbutt",
@@ -2597,7 +2638,7 @@
         "id": "base1-42",
         "name": "Wartortle",
         "number": "42",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2620,6 +2661,7 @@
             "Water"
         ],
         "evolvesFrom": "Squirtle",
+        "rarity": "Uncommon",
         "attacks": [
             {
                 "name": "Withdraw",
@@ -2660,7 +2702,7 @@
         "id": "base1-43",
         "name": "Abra",
         "number": "43",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2682,6 +2724,7 @@
         "types": [
             "Psychic"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Psyshock",
@@ -2708,7 +2751,7 @@
         "id": "base1-44",
         "name": "Bulbasaur",
         "number": "44",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2730,6 +2773,7 @@
         "types": [
             "Grass"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Leech Seed",
@@ -2757,7 +2801,7 @@
         "id": "base1-45",
         "name": "Caterpie",
         "number": "45",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2779,6 +2823,7 @@
         "types": [
             "Grass"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "String Shot",
@@ -2805,7 +2850,7 @@
         "id": "base1-46",
         "name": "Charmander",
         "number": "46",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2827,6 +2872,7 @@
         "types": [
             "Fire"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Scratch",
@@ -2865,7 +2911,7 @@
         "id": "base1-47",
         "name": "Diglett",
         "number": "47",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2887,6 +2933,7 @@
         "types": [
             "Fighting"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Dig",
@@ -2933,7 +2980,7 @@
         "id": "base1-48",
         "name": "Doduo",
         "number": "48",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -2955,6 +3002,7 @@
         "types": [
             "Colorless"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Fury Attack",
@@ -2989,7 +3037,7 @@
         "id": "base1-49",
         "name": "Drowzee",
         "number": "49",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3011,6 +3059,7 @@
         "types": [
             "Psychic"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Pound",
@@ -3049,7 +3098,7 @@
         "id": "base1-50",
         "name": "Gastly",
         "number": "50",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3071,6 +3120,7 @@
         "types": [
             "Psychic"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Sleeping Gas",
@@ -3109,7 +3159,7 @@
         "id": "base1-51",
         "name": "Koffing",
         "number": "51",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3131,6 +3181,7 @@
         "types": [
             "Grass"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Foul Gas",
@@ -3158,7 +3209,7 @@
         "id": "base1-52",
         "name": "Machop",
         "number": "52",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3180,6 +3231,7 @@
         "types": [
             "Fighting"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Low Kick",
@@ -3206,7 +3258,7 @@
         "id": "base1-53",
         "name": "Magnemite",
         "number": "53",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3228,6 +3280,7 @@
         "types": [
             "Lightning"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Thunder Wave",
@@ -3266,7 +3319,7 @@
         "id": "base1-54",
         "name": "Metapod",
         "number": "54",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3289,6 +3342,7 @@
             "Grass"
         ],
         "evolvesFrom": "Caterpie",
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Stiffen",
@@ -3328,7 +3382,7 @@
         "id": "base1-55",
         "name": "Nidoran ♂",
         "number": "55",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3350,6 +3404,7 @@
         "types": [
             "Grass"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Horn Hazard",
@@ -3376,7 +3431,7 @@
         "id": "base1-56",
         "name": "Onix",
         "number": "56",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3398,6 +3453,7 @@
         "types": [
             "Fighting"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Rock Throw",
@@ -3436,7 +3492,7 @@
         "id": "base1-57",
         "name": "Pidgey",
         "number": "57",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3458,6 +3514,7 @@
         "types": [
             "Colorless"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Whirlwind",
@@ -3493,7 +3550,7 @@
         "id": "base1-58",
         "name": "Pikachu",
         "number": "58",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3515,6 +3572,7 @@
         "types": [
             "Lightning"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Gnaw",
@@ -3553,7 +3611,7 @@
         "id": "base1-59",
         "name": "Poliwag",
         "number": "59",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3575,6 +3633,7 @@
         "types": [
             "Water"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Water Gun",
@@ -3601,7 +3660,7 @@
         "id": "base1-60",
         "name": "Ponyta",
         "number": "60",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3623,6 +3682,7 @@
         "types": [
             "Fire"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Smash Kick",
@@ -3662,7 +3722,7 @@
         "id": "base1-61",
         "name": "Rattata",
         "number": "61",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3684,6 +3744,7 @@
         "types": [
             "Colorless"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Bite",
@@ -3718,7 +3779,7 @@
         "id": "base1-62",
         "name": "Sandshrew",
         "number": "62",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3740,6 +3801,7 @@
         "types": [
             "Fighting"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Sand-attack",
@@ -3774,7 +3836,7 @@
         "id": "base1-63",
         "name": "Squirtle",
         "number": "63",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3796,6 +3858,7 @@
         "types": [
             "Water"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Bubble",
@@ -3834,7 +3897,7 @@
         "id": "base1-64",
         "name": "Starmie",
         "number": "64",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3857,6 +3920,7 @@
             "Water"
         ],
         "evolvesFrom": "Staryu",
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Recover",
@@ -3897,7 +3961,7 @@
         "id": "base1-65",
         "name": "Staryu",
         "number": "65",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3919,6 +3983,7 @@
         "types": [
             "Water"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Slap",
@@ -3945,7 +4010,7 @@
         "id": "base1-66",
         "name": "Tangela",
         "number": "66",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -3967,6 +4032,7 @@
         "types": [
             "Grass"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Bind",
@@ -4007,7 +4073,7 @@
         "id": "base1-67",
         "name": "Voltorb",
         "number": "67",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4029,6 +4095,7 @@
         "types": [
             "Lightning"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Tackle",
@@ -4055,7 +4122,7 @@
         "id": "base1-68",
         "name": "Vulpix",
         "number": "68",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4077,6 +4144,7 @@
         "types": [
             "Fire"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Confuse Ray",
@@ -4104,7 +4172,7 @@
         "id": "base1-69",
         "name": "Weedle",
         "number": "69",
-        "supertype": "pokemon",
+        "supertype": "Pokemon",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4126,6 +4194,7 @@
         "types": [
             "Grass"
         ],
+        "rarity": "Common",
         "attacks": [
             {
                 "name": "Poison Sting",
@@ -4152,7 +4221,7 @@
         "id": "base1-70",
         "name": "Clefairy Doll",
         "number": "70",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4166,13 +4235,17 @@
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
         },
-        "hp": "10"
+        "hp": "10",
+        "rules": [
+            "Play Clefairy Doll as if it were a Basic Pokémon. While in play, Clefairy Doll counts a a Pokémon (instead of a Trainer card). Clefairy Doll has no attacks, can't retreat, and can't be Asleep, Confused, Paralyzed, or Poisoned. If Clefairy Doll is Knocked Out, it doesn't count as a Knocked Out Pokémon. At any time during your turn before your attack, you may discard Clefairy Doll."
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-71",
         "name": "Computer Search",
         "number": "71",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4185,13 +4258,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Discard 2 of the other cards from your hand in order to search your deck for any card and put it into your hand. Shuffle your deck afterward."
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-72",
         "name": "Devolution Spray",
         "number": "72",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4204,13 +4281,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Choose 1 of your own Pokémon in play and a Stage of Evolution. Discard all Evolution cards of that Stage or higher attached to that Pokémon. That Pokémon is no longer Asleep, Confused, Paralyzed, Poisoned, or anything else that might be the result of an attack (just as if you had evolved it)."
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-73",
         "name": "Impostor Professor Oak",
         "number": "73",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4223,13 +4304,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards."
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-74",
         "name": "Item Finder",
         "number": "74",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4242,13 +4327,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Discard 2 of the other cards from your hand in order to put a Trainer card from your discard pile into your hand."
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-75",
         "name": "Lass",
         "number": "75",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4261,13 +4350,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "You and your opponent show each other your hands, then shuffle all the Trainer cards from your hands into your decks."
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-76",
         "name": "Pokémon Breeder",
         "number": "76",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4280,13 +4373,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Put a Stage 2 Evolution card from your hand on the matching Basic Pokémon. You can only play this card when you would be allowed to evolve that Pokémon anyway."
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-77",
         "name": "Pokémon Trader",
         "number": "77",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4299,13 +4396,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Trade 1 of the Basic Pokémon or Evolution cards in your hand for 1 of the Basic Pokémon or Evolution cards from your deck. Show both cards to your opponent. Shuffle your deck afterward."
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-78",
         "name": "Scoop Up",
         "number": "78",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4318,13 +4419,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Choose 1 of your Pokémon in play and return its Basic Pokémon card to your hand. (Discard all cards attached to that card.)"
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-79",
         "name": "Super Energy Removal",
         "number": "79",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4337,13 +4442,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Discard 1 Energy card attached to 1 of your Pokémon in order to choose 1 of your opponent's Pokémon and up to 2 Energy cards attached to it. Discard those Energy cards."
+        ],
+        "rarity": "Rare"
     },
     {
         "id": "base1-80",
         "name": "Defender",
         "number": "80",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4356,13 +4465,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Attach Defender to 1 of your Pokémon. At the end of your opponent's next turn, discard Defender. Damage done to that Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-81",
         "name": "Energy Retrieval",
         "number": "81",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4375,13 +4488,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Trade 1 of the other cards in your hand for up to 2 basic Energy cards from your discard pile."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-82",
         "name": "Full Heal",
         "number": "82",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4394,13 +4511,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Your Active Pokémon is no longer Asleep, Confused, Paralyzed, or Poisoned."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-83",
         "name": "Maintenance",
         "number": "83",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4413,13 +4534,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Shuffle 2 of the other cards from your hand into your deck in order to draw a card."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-84",
         "name": "PlusPower",
         "number": "84",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4432,13 +4557,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Attach PlusPower to your Active Pokémon. At the end of your turn, discard PlusPower. If this Pokémon's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), the attack does 10 more damage to the Defending Pokémon."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-85",
         "name": "Pokémon Center",
         "number": "85",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4451,13 +4580,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Remove all damage counters from all of your own Pokémon with damage counters on them, then discard all Energy cards attached to those Pokémon."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-86",
         "name": "Pokémon Flute",
         "number": "86",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4470,13 +4603,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Choose 1 Basic Pokémon card from your opponent's discard pile and put it onto his or her Bench. (You can't play Pokémon Flute if your opponent's Bench is full.)"
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-87",
         "name": "Pokédex",
         "number": "87",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4489,13 +4626,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Look at up to 5 cards from the top of your deck and rearrange them as you like."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-88",
         "name": "Professor Oak",
         "number": "88",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4508,13 +4649,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Discard your hand, then draw 7 cards."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-89",
         "name": "Revive",
         "number": "89",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4527,13 +4672,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Put 1 Basic Pokémon card from your discard pile onto your Bench. Put damage counters on that Pokémon equal to half its HP (rounded down to the nearest 10). (You can't play Revive if your Bench is full.)"
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-90",
         "name": "Super Potion",
         "number": "90",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4546,13 +4695,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Discard 1 Energy card attached to your own Pokémon in order to remove up to 4 damage counters from that Pokémon."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-91",
         "name": "Bill",
         "number": "91",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4565,13 +4718,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Draw 2 cards."
+        ],
+        "rarity": "Common"
     },
     {
         "id": "base1-92",
         "name": "Energy Removal",
         "number": "92",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4584,13 +4741,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Choose 1 Energy card attached to 1 of your opponent's Pokémon and discard it."
+        ],
+        "rarity": "Common"
     },
     {
         "id": "base1-93",
         "name": "Gust of Wind",
         "number": "93",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4603,13 +4764,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Choose 1 of your opponent's Benched Pokémon and switch it with his or her Active Pokémon."
+        ],
+        "rarity": "Common"
     },
     {
         "id": "base1-94",
         "name": "Potion",
         "number": "94",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4622,13 +4787,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Remove up to 2 damage counters from 1 of your Pokémon."
+        ],
+        "rarity": "Common"
     },
     {
         "id": "base1-95",
         "name": "Switch",
         "number": "95",
-        "supertype": "trainer",
+        "supertype": "Trainer",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4641,13 +4810,17 @@
             "ptcgoCode": "BS",
             "releaseDate": "1999/01/09",
             "updatedAt": "2022/10/10 15:12:00"
-        }
+        },
+        "rules": [
+            "Switch 1 of your own Benched Pokémon with your Active Pokémon."
+        ],
+        "rarity": "Common"
     },
     {
         "id": "base1-96",
         "name": "Double Colorless Energy",
         "number": "96",
-        "supertype": "energy",
+        "supertype": "Energy",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4663,13 +4836,17 @@
         },
         "subtypes": [
             "Special"
-        ]
+        ],
+        "rules": [
+            "Provides ColorlessColorless energy.\nDoesn't count as a basic Energy card."
+        ],
+        "rarity": "Uncommon"
     },
     {
         "id": "base1-97",
         "name": "Fighting Energy",
         "number": "97",
-        "supertype": "energy",
+        "supertype": "Energy",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4691,7 +4868,7 @@
         "id": "base1-98",
         "name": "Fire Energy",
         "number": "98",
-        "supertype": "energy",
+        "supertype": "Energy",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4713,7 +4890,7 @@
         "id": "base1-99",
         "name": "Grass Energy",
         "number": "99",
-        "supertype": "energy",
+        "supertype": "Energy",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4735,7 +4912,7 @@
         "id": "base1-100",
         "name": "Lightning Energy",
         "number": "100",
-        "supertype": "energy",
+        "supertype": "Energy",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4757,7 +4934,7 @@
         "id": "base1-101",
         "name": "Psychic Energy",
         "number": "101",
-        "supertype": "energy",
+        "supertype": "Energy",
         "set": {
             "id": "base1",
             "name": "Base",
@@ -4779,7 +4956,7 @@
         "id": "base1-102",
         "name": "Water Energy",
         "number": "102",
-        "supertype": "energy",
+        "supertype": "Energy",
         "set": {
             "id": "base1",
             "name": "Base",

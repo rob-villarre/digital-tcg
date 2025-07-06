@@ -30,18 +30,91 @@ def download_images(cards: list[dict], filepath: str):
 
 def normalize(text):
     """
-    Normalizes text by removing diacritics and converting to lowercase.
+    Normalizes text by removing diacritics
     
     Args:
         text (str): The text string to normalize
         
     Returns:
-        str: The normalized text with diacritics removed and converted to lowercase
+        str: The normalized text with diacritics removed
     """
     return ''.join(
         c for c in unicodedata.normalize('NFKD', text)
         if not unicodedata.combining(c)
-    ).lower()
+    )
+
+def parse_card_abilities(card: dict) -> list:
+    """Parse abilities for a card, normalizing ability types"""
+    if 'abilities' not in card:
+        return []
+    abilities = card['abilities']
+    for ability in abilities:
+        ability['type'] = normalize(ability['type'])
+    return abilities
+
+def parse_card_attacks(card: dict) -> list:
+    """Parse attacks for a card, extracting damage values and operations"""
+    if 'attacks' not in card:
+        return []
+    attacks = []
+    for attack in card['attacks']:
+        attack['baseDamage'], attack['damageOperation'] = parse_damage(attack['damage'])
+        attacks.append(attack)
+    return attacks
+
+def parse_card_weaknesses(card: dict) -> list:
+    """Parse weaknesses for a card, extracting values and operations"""
+    if 'weaknesses' not in card:
+        return []
+    weaknesses = []
+    for weakness in card['weaknesses']:
+        weakness['weaknessValue'], weakness['weaknessOperation'] = parse_weakness(weakness['value'])
+        weaknesses.append(weakness)
+    return weaknesses
+
+def parse_card_resistances(card: dict) -> list:
+    """Parse resistances for a card, extracting values and operations"""
+    if 'resistances' not in card:
+        return []
+    resistances = []
+    for resistance in card['resistances']:
+        resistance['resistanceValue'], resistance['resistanceOperation'] = parse_resistance(resistance['value'])
+        resistances.append(resistance)
+    return resistances
+
+def parse_single_card(card: dict) -> dict:
+    """Parse a single card's data into the required format"""
+    parsed_card = {
+        'id': card['id'],
+        'name': card['name'],
+        'number': card['number'],
+        'supertype': normalize(card['supertype']),
+        'set': card['set'],
+    }
+
+    del parsed_card['set']['images']
+
+    # Add optional fields
+    optional_fields = ['subtypes', 'hp', 'level', 'types', 'evolvesFrom', 'rules', 'rarity']
+    for field in optional_fields:
+        if field in card:
+            parsed_card[field] = card[field]
+
+    # Parse card attributes
+    abilities = parse_card_abilities(card)
+    if abilities:
+        parsed_card['abilities'] = abilities
+    attacks = parse_card_attacks(card)
+    if attacks:
+        parsed_card['attacks'] = attacks
+    weaknesses = parse_card_weaknesses(card)
+    if weaknesses:
+        parsed_card['weaknesses'] = weaknesses
+    resistances = parse_card_resistances(card)
+    if resistances:
+        parsed_card['resistances'] = resistances
+
+    return parsed_card
 
 def parse_cards_json(input_filepath: str, output_filepath: str, fetch_images: bool = False):
     """
@@ -62,55 +135,7 @@ def parse_cards_json(input_filepath: str, output_filepath: str, fetch_images: bo
             download_images(cards, '../../assets/cards/base1')
         
         print("Parsing all cards...")
-        output = []
-        for card in cards:
-            print(f"Parsing card {card['id']}")
-            parsed_card = {
-                'id': card['id'],
-                'name': card['name'],
-                'number': card['number'],
-                'supertype': normalize(card['supertype']),
-                'set': card['set'],
-            }
-
-            # remove some fields from set
-            del parsed_card['set']['images']
-            
-
-            optional_fields = ['subtypes', 'hp', 'level', 'types', 'evolvesFrom']
-            for field in optional_fields:
-                if field in card:
-                    parsed_card[field] = card[field]
-
-            if 'abilities' in card:
-                abilities = card['abilities']
-                for ability in abilities:
-                    ability['type'] = normalize(ability['type'])
-                parsed_card['abilities'] = abilities
-
-            if 'attacks' in card:
-                parsed_card['attacks'] = []
-                attacks = card['attacks']
-                for attack in attacks:
-                    attack['baseDamage'], attack['damageOperation'] = parse_damage(attack['damage'])
-                    parsed_card['attacks'].append(attack)
-
-            if 'weaknesses' in card:
-                parsed_card['weaknesses'] = []
-                weaknesses = card['weaknesses']
-                for weakness in weaknesses:
-                    weakness['weaknessValue'], weakness['weaknessOperation'] = parse_weakness(weakness['value'])
-                    parsed_card['weaknesses'].append(weakness)
-
-            if 'resistances' in card:
-                parsed_card['resistances'] = []
-                resistances = card['resistances']
-                for resistance in resistances:
-                    resistance['resistanceValue'], resistance['resistanceOperation'] = parse_resistance(resistance['value'])
-                    parsed_card['resistances'].append(resistance)
-
-
-            output.append(parsed_card)
+        output = [parse_single_card(card) for card in cards]
         
         print(f"Writting parsed cards json to {output_filepath}")
         json_string = json.dumps(output, indent=4, ensure_ascii=False)
