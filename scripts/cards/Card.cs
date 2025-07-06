@@ -1,46 +1,60 @@
 using System;
 using Godot;
 
-enum CardType {
+public enum CardType
+{
+  None,
   Pokemon,
   Trainer,
   Energy
 }
 
+// public class Set
+// {
+//   private 
+// }
+
+
 public partial class Card : TextureButton
 {
 
   [Export]
-  private Texture2D TextureFront;
+  protected Texture2D textureFront = ResourceLoader.Load<Texture2D>("res://assets/cards/other/back.png");
 
   [Export]
-  private Texture2D TextureBack = ResourceLoader.Load<Texture2D>("res://assets/cards/other/back.png");
+  protected Texture2D textureBack = ResourceLoader.Load<Texture2D>("res://assets/cards/other/back.png");
 
   [Export]
-  private String CardName;
+  protected string title;
 
   [Export]
-  private CardType Type;
+  protected CardType type = CardType.None;
 
   [Export]
-  private Boolean IsFaceUp = true;
+  protected Boolean isFaceUp = true;
 
-  [Export]
+  protected string setId;
+  protected string number;
+  protected string rarity;
+  protected string flavorText;
 
-  private float YRot {
+  public float YRot
+  {
     get
     {
       ShaderMaterial shader = (ShaderMaterial)Material;
       return (float)shader.GetShaderParameter("y_rot");
     }
-    set {
+    set
+    {
       ShaderMaterial shader = (ShaderMaterial)Material;
       shader.SetShaderParameter("y_rot", value);
     }
   }
+
   public override void _Ready()
   {
-    TextureNormal = IsFaceUp ? TextureFront : TextureBack;
+    TextureNormal = isFaceUp ? textureFront : textureBack;
   }
 
   private void OnGuiInput(InputEvent @event)
@@ -60,8 +74,8 @@ public partial class Card : TextureButton
 
   public void FlipCard()
   {
-    IsFaceUp = !IsFaceUp;
-    TextureNormal = IsFaceUp ? TextureFront : TextureBack;
+    isFaceUp = !isFaceUp;
+    TextureNormal = isFaceUp ? textureFront : textureBack;
   }
 
   private void TiltCard()
