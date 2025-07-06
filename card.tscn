@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctkt3axb5ubq"]
+
+[ext_resource type="Script" uid="uid://11ypiuy55tcs" path="res://Card.cs" id="1_kikvd"]
+[ext_resource type="Shader" uid="uid://dv8uccssex2p2" path="res://shaders/card_tilt.gdshader" id="1_q5obu"]
+[ext_resource type="Texture2D" uid="uid://pejapxqx1ff8" path="res://assets/bs.047.diglett.jpg" id="1_rjlel"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e484p"]
+shader = ExtResource("1_q5obu")
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/y_rot = 0.0
+shader_parameter/x_rot = 0.0
+shader_parameter/inset = 0.0
+shader_parameter/rect_size = Vector2(250, 350)
+
+[node name="Card" type="TextureButton"]
+material = SubResource("ShaderMaterial_e484p")
+offset_left = 236.0
+offset_top = 143.0
+offset_right = 486.0
+offset_bottom = 493.0
+texture_normal = ExtResource("1_rjlel")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("1_kikvd")
+
+[connection signal="gui_input" from="." to="." method="OnGuiInput"]
+[connection signal="mouse_exited" from="." to="." method="OnMouseExited"]
