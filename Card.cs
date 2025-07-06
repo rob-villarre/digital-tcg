@@ -11,23 +11,57 @@ public partial class Card : TextureButton
 {
 
   [Export]
+  private Texture2D TextureFront;
+
+  [Export]
+  private Texture2D TextureBack = ResourceLoader.Load<Texture2D>("res://assets/cards/other/back.png");
+
+  [Export]
   private String CardName;
 
   [Export]
   private CardType Type;
 
+  [Export]
+  private Boolean IsFaceUp = true;
+
+  [Export]
+
+  private float YRot {
+    get
+    {
+      ShaderMaterial shader = (ShaderMaterial)Material;
+      return (float)shader.GetShaderParameter("y_rot");
+    }
+    set {
+      ShaderMaterial shader = (ShaderMaterial)Material;
+      shader.SetShaderParameter("y_rot", value);
+    }
+  }
   public override void _Ready()
   {
-
+    TextureNormal = IsFaceUp ? TextureFront : TextureBack;
   }
-
 
   private void OnGuiInput(InputEvent @event)
   {
     if (@event is InputEventMouseMotion)
     {
-      TiltCard();
+      // TiltCard();
     }
+  }
+
+  private void OnPressed()
+  {
+    // FlipCard();
+    AnimationPlayer player = GetNode<AnimationPlayer>("FlipCardAnimationPlayer");
+    player.Play("card_flip_animation");
+  }
+
+  public void FlipCard()
+  {
+    IsFaceUp = !IsFaceUp;
+    TextureNormal = IsFaceUp ? TextureFront : TextureBack;
   }
 
   private void TiltCard()
@@ -54,6 +88,6 @@ public partial class Card : TextureButton
 
   private void OnMouseExited()
   {
-    ResetCardTilt();
+    // ResetCardTilt();
   }
 }
