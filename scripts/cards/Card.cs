@@ -1,9 +1,8 @@
 using System;
 using Godot;
 
-public enum CardType
+public enum CardSupertype
 {
-  None,
   Pokemon,
   Trainer,
   Energy
@@ -28,7 +27,7 @@ public partial class Card : TextureButton
   protected string title;
 
   [Export]
-  protected CardType type = CardType.None;
+  protected CardSupertype type;
 
   [Export]
   protected Boolean isFaceUp = true;

@@ -1,59 +1,105 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Godot;
+using Godot.Collections;
 
 #nullable enable
 
-public enum DamageModifier
+public enum Operation
 {
   None,
   Plus,
+  Minus,
   Multiply
 }
 
 public class Attack
 {
-  private string _name;
-  private string? _text = null;
-  private List<EnergyType> _cost;
-  private Int16 _convertedEnergyCost;
+  public string Name { get; init; } = string.Empty;
+  public string? Text = null;
+  public List<Energy> Cost { get; init; } = [];
+  public short ConvertedEnergyCost { get; init; }
+  public string Damage { get; init; } = string.Empty;
+  public short BaseDamage { get; init; }
+  public Operation Operation { get; init; }
+}
 
-  // TODO: look into turning 30x, 40+ damage to ints
-  private Int16 _baseDamage;
+public class Ability
+{
+  public string Name { get; init; } = string.Empty;
+  public string Text { get; init; } = string.Empty;
+  public string Type { get; init; } = string.Empty;
+  
+}
 
-  private DamageModifier _damageModifier;
+public class Weakness
+{
+  public PokemonType Type { get; init; }
+  public short Value { get; init; }
+  public Operation Operation { get; init; }
+}
 
+public class PokemonCardProps
+{
+  public string Id { get; init; } = string.Empty;
+  public string Title { get; init; } = string.Empty;
+  public short Number { get; init; }
+  public string Supertype { get; init; } = string.Empty;
+  public List<string> Subtypes { get; init; } = [];
+  public CardSet CardSet { get; init; } = new CardSet();
 
-  public Attack(string name, string? text, List<EnergyType> cost, Int16 convertedEnergyCost, Int16 baseDamage, DamageModifier damageModifier)
-  {
-    _name = name;
-    _text = text;
-    _cost = cost;
-    _convertedEnergyCost = convertedEnergyCost;
-    _baseDamage = baseDamage;
-    _damageModifier = damageModifier;
-  }
+  public short HitPoints { get; init; }
+  public List<PokemonType> Types { get; init; } = [];
+  public string? EvolvesFrom { get; init; }
+  public string? EvolvesTo { get; init; }
+  public string Rarity { get; init; } = string.Empty;
+  public List<Ability> Abilities { get; init; } = [];
+  public List<Attack> Attacks { get; init; } = [];
+  public List<Weakness> Weaknesses { get; init; } = [];
 }
 
 public partial class PokemonCard : Card
 {
-  [Export]
-  private Int16 _hitPoints;
 
-  private List<String> _subtypes;
+  public string Id { get; init; } = string.Empty;
+  public string Title { get; init; } = string.Empty;
+  public short Number { get; init; }
+  public string Supertype { get; init; } = string.Empty;
+  public List<string> Subtypes { get; init; } = [];
+  public CardSet CardSet { get; init; } = new CardSet();
 
-  private List<String> _types;
+  public short HitPoints { get; init; }
+  public List<PokemonType> Types { get; init; } = [];
+  public string? EvolvesFrom { get; init; }
+  public string? EvolvesTo { get; init; }
+  public string Rarity { get; init; } = string.Empty;
+  public List<Ability> Abilities { get; init; } = [];
+  public List<Attack> Attacks { get; init; } = [];
+  public List<Weakness> Weaknesses { get; init; } = [];
 
-  private string? _evolvesFrom = null;
-
-  private string? _evolvesTo = null;
-
-  private List<Attack> _attacks;
-
-  private List<EnergyType> _attachedEnergy;
-
-  public PokemonCard()
+  public override string ToString()
   {
+    return $"PokemonCard(Id: {Id}, Title: {Title})";
+  }
+
+  public static PokemonCard Instantiate(PokemonCardProps props)
+  {
+    PackedScene scene = GD.Load<PackedScene>("res://scenes/cards/pokemon_card.tscn");
+    PokemonCard card = scene.Instantiate<PokemonCard>();
+
+    card.textureFront = ResourceLoader.Load<Texture2D>($"res://assets/cards/{props.CardSet.Id}/images/{props.Id}.png");
+
+    foreach (PropertyInfo prop in typeof(PokemonCardProps).GetProperties())
+    {
+      PropertyInfo? cardProp = typeof(PokemonCard).GetProperty(prop.Name);
+      if (cardProp != null && cardProp.CanWrite)
+      {
+        cardProp.SetValue(card, prop.GetValue(props));
+      }
+    }
+
+    return card;
   }
 
 }

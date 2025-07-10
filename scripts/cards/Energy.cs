@@ -1,4 +1,4 @@
-public enum EnergyType
+public enum Energy
 {
   Colorless,
   Grass,

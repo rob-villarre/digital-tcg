@@ -18,12 +18,10 @@ def download_images(cards: list[dict], filepath: str):
         card_name = card['name']
         card_id = card['id']
         card_image_url = card['images']['large']
-        card_set_id = card['set']['id']
-        card_set_number = card['number']
         print(f"Saving image of card '{card_name}' with id '{card_id}' to '{filepath}'")
         try:
             image_data = requests.get(card_image_url, timeout=10).content
-            with open(f"{filepath}/{card_set_id}.{card_set_number}.png", 'wb') as handler:
+            with open(filepath+card_id+".png", 'wb') as handler:
                 handler.write(image_data)
         except requests.RequestException:
             print(f"Failed to fetch image for card '{card_name}' with id '{card_id}'")
@@ -95,7 +93,7 @@ def parse_single_card(card: dict) -> dict:
     del parsed_card['set']['images']
 
     # Add optional fields
-    optional_fields = ['subtypes', 'hp', 'level', 'types', 'evolvesFrom', 'rules', 'rarity']
+    optional_fields = ['subtypes', 'hp', 'level', 'types', 'evolvesFrom', 'evolvesTo', 'rules', 'rarity']
     for field in optional_fields:
         if field in card:
             parsed_card[field] = card[field]
@@ -132,11 +130,14 @@ def parse_cards_json(input_filepath: str, output_filepath: str, fetch_images: bo
         cards = data['data']
 
         if fetch_images:
-            download_images(cards, '../../assets/cards/base1')
-        
+            download_images(cards, '../../assets/cards/base1/images/')
+    
         print("Parsing all cards...")
-        output = [parse_single_card(card) for card in cards]
-        
+        output = {}
+        for card in cards:
+            paresed_card = parse_single_card(card)
+            output[paresed_card['id']] = paresed_card
+
         print(f"Writting parsed cards json to {output_filepath}")
         json_string = json.dumps(output, indent=4, ensure_ascii=False)
         with open(output_filepath, 'w', encoding='utf-8') as output_file:
@@ -208,7 +209,7 @@ def parse_resistance(value: str) -> tuple[int, str]:
 
 if __name__ == "__main__":
     parse_cards_json(
-        input_filepath='../BaseSetAPIResponse.json',
-        output_filepath='../../assets/cards/base1.json',
+        input_filepath='../base1_api_response.json',
+        output_filepath='../../assets/cards/base1/data.json',
         fetch_images=False
     )
