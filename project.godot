@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Digital TCG"
-run/main_scene="uid://db0d5qpecx4am"
+run/main_scene="uid://fvaaxaf70eri"
 config/features=PackedStringArray("4.4", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 

@@ -5,3 +5,4 @@
 
 [node name="PokemonCard" instance=ExtResource("1_wuvms")]
 script = ExtResource("2_umkay")
+metadata/_edit_use_anchors_ = true

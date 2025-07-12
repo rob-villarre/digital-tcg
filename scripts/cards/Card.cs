@@ -87,6 +87,10 @@ public partial class Card : TextureButton
   public override void _Ready()
   {
     TextureNormal = isFaceUp ? textureFront : textureBack;
+    ShaderMaterial shader = (ShaderMaterial)Material;
+    Material = shader.Duplicate() as ShaderMaterial;
+    shader = (ShaderMaterial)Material;
+    shader.SetShaderParameter("rect_size", Size);
   }
 
   private void OnGuiInput(InputEvent @event)
