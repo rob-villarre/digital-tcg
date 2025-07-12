@@ -1,8 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://bd51gemt2akgb"]
 
 [ext_resource type="PackedScene" uid="uid://ctkt3axb5ubq" path="res://scenes/cards/card.tscn" id="1_wuvms"]
-[ext_resource type="Script" uid="uid://dvajv12qlsnwx" path="res://scripts/cards/PokemonCard.cs" id="2_umkay"]
+[ext_resource type="Script" uid="uid://ikpono1xl566" path="res://scripts/views/cards/PokemonCardView.cs" id="2_wuvms"]
 
 [node name="PokemonCard" instance=ExtResource("1_wuvms")]
-script = ExtResource("2_umkay")
+script = ExtResource("2_wuvms")
 metadata/_edit_use_anchors_ = true

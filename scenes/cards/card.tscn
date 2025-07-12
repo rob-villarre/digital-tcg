@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://ctkt3axb5ubq"]
 
-[ext_resource type="Script" uid="uid://11ypiuy55tcs" path="res://scripts/cards/Card.cs" id="1_kikvd"]
 [ext_resource type="Shader" uid="uid://dv8uccssex2p2" path="res://assets/shaders/card_tilt.gdshader" id="1_q5obu"]
 [ext_resource type="Texture2D" uid="uid://c4qcct770ey2t" path="res://assets/cards/other/back.png" id="2_e484p"]
+[ext_resource type="Script" uid="uid://lwtu360v45ei" path="res://scripts/views/cards/CardView.cs" id="3_73nwn"]
 [ext_resource type="Animation" uid="uid://b4hcvnu6iaeu7" path="res://assets/animations/card_flip_animation.res" id="4_73nwn"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jl6rh"]
@@ -47,7 +47,7 @@ size_flags_vertical = 4
 texture_normal = ExtResource("2_e484p")
 ignore_texture_size = true
 stretch_mode = 5
-script = ExtResource("1_kikvd")
+script = ExtResource("3_73nwn")
 
 [node name="FlipCardAnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

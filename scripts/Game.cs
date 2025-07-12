@@ -6,7 +6,7 @@ public partial class Game : CanvasLayer
 
   public override void _Ready()
   {
-    Card card = CardFactory.Create($"base1-55");
+    CardView card = CardFactory.Create($"base1-55");
     AddChild(card);
   }
 

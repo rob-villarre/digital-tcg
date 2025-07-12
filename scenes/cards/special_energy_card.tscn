@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cagkjhu5ghnsj"]
 
 [ext_resource type="PackedScene" uid="uid://ctkt3axb5ubq" path="res://scenes/cards/card.tscn" id="1_fxg7i"]
-[ext_resource type="Script" uid="uid://bwuf7ht3u4rlk" path="res://scripts/cards/SpecialEnergyCard.cs" id="2_xkmo3"]
+[ext_resource type="Script" uid="uid://bwuf7ht3u4rlk" path="res://scripts/views/cards/SpecialEnergyCard.cs" id="2_xkmo3"]
 
 [node name="SpecialEnergyCard" instance=ExtResource("1_fxg7i")]
 script = ExtResource("2_xkmo3")

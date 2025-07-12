@@ -14,12 +14,12 @@ public static class CardFactory
     _base1cardData = GD.Load<Json>("res://assets/cards/base1/data.json").Data.AsGodotDictionary();
   }
   
-  private static readonly System.Collections.Generic.Dictionary<string, Func<Dictionary, Card>> _cardCreators = new()
+  private static readonly System.Collections.Generic.Dictionary<string, Func<Dictionary, CardView>> _cardCreators = new()
   {
-    [nameof(CardSupertype.Pokemon)] = data => PokemonCard.Instantiate(CreatePokemonCardProps(data)),
-    [nameof(CardSupertype.Trainer)] = data => TrainerCard.Instantiate(CreateTrainerCardProps(data)),
-    ["Energy.Basic"] = data => BasicEnergyCard.Instantiate(CreateBasicEnergyCardProps(data)),
-    ["Energy.Special"] = data => SpecialEnergyCard.Instantiate(CreateSpecialEnergyCardProps(data))
+    [nameof(CardSupertype.Pokemon)] = data => PokemonCardView.Instantiate(CreatePokemonCardProps(data)),
+    [nameof(CardSupertype.Trainer)] = data => TrainerCardView.Instantiate(CreateTrainerCardProps(data)),
+    ["Energy.Basic"] = data => BasicEnergyCardView.Instantiate(CreateBasicEnergyCardProps(data)),
+    ["Energy.Special"] = data => SpecialEnergyCardView.Instantiate(CreateSpecialEnergyCardProps(data))
   };
 
   private static string GetCardKey(Dictionary cardData)
@@ -33,7 +33,7 @@ public static class CardFactory
     return supertype;
   }
 
-  public static Card Create(string id)
+  public static CardView Create(string id)
   {
     var cardData = _base1cardData[id].AsGodotDictionary();
     string key = GetCardKey(cardData);

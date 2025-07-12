@@ -3,9 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-public partial class Hand : HBoxContainer
+public partial class HandView : HBoxContainer
 {
-  const short INIT_HAND_SIZE = 7;
   private List<Card> _cards = [];
 
   [Export]
@@ -15,16 +14,13 @@ public partial class Hand : HBoxContainer
   public int NormalSeparation = 10;
 
   [Export]
-  public int OverlapSeparation = -3;
-
-  [Export]
   public int HoverOffset = 20;
 
   public override void _Ready()
   {
-    for (int i = 1; i <= 60; i++)
+    for (int i = 1; i <= 30; i++)
     {
-      Card card = CardFactory.Create($"base1-{i}");
+      CardView card = CardFactory.Create($"base1-{i}");
       AddChild(card);
       card.MouseEntered += () => OnCardHover(card);
       card.MouseExited += () => OnCardUnhover(card);
