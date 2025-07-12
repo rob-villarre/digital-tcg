@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using Godot;
 
-#nullable enable
 
 public partial class CardView : TextureButton
 {
-  
+
+  public Card Card { get; set; }
+
   [Export]
   protected Texture2D textureFront = ResourceLoader.Load<Texture2D>("res://assets/cards/other/back.png");
 

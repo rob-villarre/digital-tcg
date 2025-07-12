@@ -11,19 +11,11 @@ public partial class SpecialEnergyCardView : CardView
   public static SpecialEnergyCardView Instantiate(SpecialEnergyCardProps props)
   {
     PackedScene scene = GD.Load<PackedScene>("res://scenes/cards/special_energy_card.tscn");
-    SpecialEnergyCardView card = scene.Instantiate<SpecialEnergyCardView>();
+    SpecialEnergyCardView cardView = scene.Instantiate<SpecialEnergyCardView>();
 
-    card.textureFront = ResourceLoader.Load<Texture2D>($"res://assets/cards/{props.CardSet.Id}/images/{props.Id}.png");
+    cardView.textureFront = ResourceLoader.Load<Texture2D>($"res://assets/cards/{props.CardSet.Id}/images/{props.Id}.png"); 
+    cardView.Card = new SpecialEnergyCard(props);
 
-    // foreach (PropertyInfo prop in typeof(BasicEnergyCardProps).GetProperties())
-    // {
-    //   PropertyInfo? cardProp = typeof(SpecialEnergyCardView).GetProperty(prop.Name);
-    //   if (cardProp != null && cardProp.CanWrite)
-    //   {
-    //     cardProp.SetValue(card, prop.GetValue(props));
-    //   }
-    // }
-
-    return card;
+    return cardView;
   }
 }
