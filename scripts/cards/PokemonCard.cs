@@ -6,6 +6,21 @@ using Godot.Collections;
 
 #nullable enable
 
+public enum PokemonType
+{
+  Colorless,
+  Darkness,
+  Dragon,
+  Fairy,
+  Fighting,
+  Fire,
+  Grass,
+  Lightning,
+  Metal,
+  Psychic,
+  Water
+}
+
 public enum Operation
 {
   None,
@@ -18,7 +33,7 @@ public class Attack
 {
   public string Name { get; init; } = string.Empty;
   public string? Text = null;
-  public List<Energy> Cost { get; init; } = [];
+  public List<BasicEnergy> Cost { get; init; } = [];
   public short ConvertedEnergyCost { get; init; }
   public string Damage { get; init; } = string.Empty;
   public short BaseDamage { get; init; }
@@ -40,43 +55,27 @@ public class Weakness
   public Operation Operation { get; init; }
 }
 
-public class PokemonCardProps
+public class PokemonCardProps : CardProps
 {
-  public string Id { get; init; } = string.Empty;
-  public string Title { get; init; } = string.Empty;
-  public short Number { get; init; }
-  public string Supertype { get; init; } = string.Empty;
-  public List<string> Subtypes { get; init; } = [];
-  public CardSet CardSet { get; init; } = new CardSet();
-
   public short HitPoints { get; init; }
   public List<PokemonType> Types { get; init; } = [];
   public string? EvolvesFrom { get; init; }
   public string? EvolvesTo { get; init; }
-  public string Rarity { get; init; } = string.Empty;
   public List<Ability> Abilities { get; init; } = [];
   public List<Attack> Attacks { get; init; } = [];
-  public List<Weakness> Weaknesses { get; init; } = [];
+  public List<Weakness>? Weaknesses { get; init; }
 }
 
 public partial class PokemonCard : Card
 {
 
-  public string Id { get; init; } = string.Empty;
-  public string Title { get; init; } = string.Empty;
-  public short Number { get; init; }
-  public string Supertype { get; init; } = string.Empty;
-  public List<string> Subtypes { get; init; } = [];
-  public CardSet CardSet { get; init; } = new CardSet();
-
   public short HitPoints { get; init; }
   public List<PokemonType> Types { get; init; } = [];
   public string? EvolvesFrom { get; init; }
   public string? EvolvesTo { get; init; }
-  public string Rarity { get; init; } = string.Empty;
   public List<Ability> Abilities { get; init; } = [];
   public List<Attack> Attacks { get; init; } = [];
-  public List<Weakness> Weaknesses { get; init; } = [];
+  public List<Weakness>? Weaknesses { get; init; }
 
   public override string ToString()
   {

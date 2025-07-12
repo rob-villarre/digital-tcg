@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpchbkykrbi03"]
+
+[ext_resource type="PackedScene" uid="uid://ctkt3axb5ubq" path="res://scenes/cards/card.tscn" id="1_k0ido"]
+[ext_resource type="Script" uid="uid://db6h8c7wnhs4y" path="res://scripts/cards/BasicEnergyCard.cs" id="2_4t1ov"]
+
+[node name="BasicEnergyCard" instance=ExtResource("1_k0ido")]
+script = ExtResource("2_4t1ov")

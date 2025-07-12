@@ -1,22 +1,66 @@
-using System;
+using System.Collections.Generic;
 using Godot;
+
+#nullable enable
 
 public enum CardSupertype
 {
   Pokemon,
   Trainer,
-  Energy
+  Energy,
 }
 
-// public class Set
-// {
-//   private 
-// }
+public enum CardSubtype
+{
+  BREAK,
+  Baby,
+  Basic,
+  EX,
+  GX,
+  GoldenrodGameCorner,
+  Item,
+  LEGEND,
+  LevelUp,
+  MEGA,
+  PokemonTool,
+  PokemonToolF,
+  RapidStrike,
+  Restored,
+  RocketsSecretMachine,
+  SingleStrike,
+  Special,
+  Stadium,
+  Stage1,
+  Stage2,
+  Supporter,
+  TAGTEAM,
+  TechnicalMachine,
+  V,
+  VMAX,
+}
+
+public class CardProps
+{
+  public string Id { get; init; } = string.Empty;
+  public string Title { get; init; } = string.Empty;
+  public short Number { get; init; }
+  public string Supertype { get; init; } = string.Empty;
+  public List<string>? Subtypes { get; init; }
+  public CardSet CardSet { get; init; } = new CardSet();
+  public string? Rarity { get; init; }
+}
 
 
 public partial class Card : TextureButton
 {
-
+  public string Id { get; init; } = string.Empty;
+  public string Title { get; init; } = string.Empty;
+  public short Number { get; init; }
+  public string Supertype { get; init; } = string.Empty;
+  public List<string>? Subtypes { get; init; }
+  public CardSet CardSet { get; init; } = new CardSet();
+  public string? Rarity { get; init; }
+  
   [Export]
   protected Texture2D textureFront = ResourceLoader.Load<Texture2D>("res://assets/cards/other/back.png");
 
@@ -24,18 +68,7 @@ public partial class Card : TextureButton
   protected Texture2D textureBack = ResourceLoader.Load<Texture2D>("res://assets/cards/other/back.png");
 
   [Export]
-  protected string title;
-
-  [Export]
-  protected CardSupertype type;
-
-  [Export]
-  protected Boolean isFaceUp = true;
-
-  protected string setId;
-  protected string number;
-  protected string rarity;
-  protected string flavorText;
+  protected bool isFaceUp = true;
 
   public float YRot
   {
