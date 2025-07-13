@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyi2m8mhm6ax0"]
+
+[ext_resource type="Script" uid="uid://caohr55w8i3xw" path="res://scripts/views/cards/CardPopupView.cs" id="2_i1r64"]
+
+[node name="CardPopup" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("2_i1r64")

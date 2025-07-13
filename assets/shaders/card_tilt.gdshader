@@ -13,7 +13,7 @@ uniform float x_rot : hint_range(-180, 180) = 0.0;
 // At 1, the image is resized so that it can do a full
 // rotation without clipping inside its rect.
 uniform float inset : hint_range(0, 1) = 0.0;
-uniform vec2 rect_size = vec2(100.0, 140.0);
+uniform vec2 rect_size = vec2(150.0, 210.0);
 varying float tang;
 
 // Consider changing this to a uniform and changing it from code
@@ -56,6 +56,7 @@ void vertex(){
 void fragment(){
 	if (cull_back && p.z <= 0.0) discard;
 	vec2 uv = (p.xy / p.z).xy - o;
+	
     //COLOR = texture(TEXTURE, uv + 0.5);
 	//COLOR.a *= step(max(abs(uv.x), abs(uv.y)), 0.5);
 	if (y_rot > 90.0) {

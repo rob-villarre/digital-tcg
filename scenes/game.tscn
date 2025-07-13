@@ -1,6 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://db0d5qpecx4am"]
+[gd_scene load_steps=4 format=3 uid="uid://db0d5qpecx4am"]
 
-[ext_resource type="Script" uid="uid://boj4r1a8ifdvt" path="res://scenes/Game.cs" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://byvjcv1nfoax0" path="res://scripts/Game.cs" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://fvaaxaf70eri" path="res://scenes/hand.tscn" id="2_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://dyi2m8mhm6ax0" path="res://scenes/cards/card_popup.tscn" id="3_lnu2h"]
 
 [node name="Main" type="CanvasLayer"]
-script = ExtResource("1_uwrxv")
+script = ExtResource("1_yqjtg")
+
+[node name="HandView" parent="." instance=ExtResource("2_lnu2h")]
+anchor_top = 1.0
+offset_top = -140.0
+offset_bottom = -140.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 1
+
+[node name="CardPopup" parent="." instance=ExtResource("3_lnu2h")]
+offset_left = 945.0
+offset_top = 184.0
+offset_right = 1045.0
+offset_bottom = 324.0

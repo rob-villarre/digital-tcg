@@ -1,18 +1,18 @@
 [gd_scene load_steps=8 format=3 uid="uid://ctkt3axb5ubq"]
 
-[ext_resource type="Shader" uid="uid://dv8uccssex2p2" path="res://assets/shaders/card_tilt.gdshader" id="1_q5obu"]
+[ext_resource type="Shader" uid="uid://dv8uccssex2p2" path="res://assets/shaders/card_tilt.gdshader" id="1_73nwn"]
 [ext_resource type="Texture2D" uid="uid://c4qcct770ey2t" path="res://assets/cards/other/back.png" id="2_e484p"]
 [ext_resource type="Script" uid="uid://lwtu360v45ei" path="res://scripts/views/cards/CardView.cs" id="3_73nwn"]
 [ext_resource type="Animation" uid="uid://b4hcvnu6iaeu7" path="res://assets/animations/card_flip_animation.res" id="4_73nwn"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_jl6rh"]
-shader = ExtResource("1_q5obu")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1q37b"]
+shader = ExtResource("1_73nwn")
 shader_parameter/fov = 45.0
 shader_parameter/cull_back = false
 shader_parameter/y_rot = 0.0
 shader_parameter/x_rot = 0.0
 shader_parameter/inset = 0.0
-shader_parameter/rect_size = Vector2(250, 350)
+shader_parameter/rect_size = Vector2(100, 140)
 
 [sub_resource type="Animation" id="Animation_e484p"]
 length = 0.001
@@ -38,15 +38,15 @@ _data = {
 [node name="Card" type="TextureButton"]
 texture_filter = 2
 texture_repeat = 1
-material = SubResource("ShaderMaterial_jl6rh")
-custom_minimum_size = Vector2(100, 140)
+material = SubResource("ShaderMaterial_1q37b")
+custom_minimum_size = Vector2(150, 210)
 offset_right = 100.0
 offset_bottom = 140.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("2_e484p")
 ignore_texture_size = true
-stretch_mode = 5
+stretch_mode = 4
 script = ExtResource("3_73nwn")
 
 [node name="FlipCardAnimationPlayer" type="AnimationPlayer" parent="."]
